@@ -18,8 +18,8 @@ import br.com.infnet.ATTele_CLIENT.negocio.Consulta;
 public interface IConsultaClient {
 	
 	
-	@GetMapping(value = "/consulta/listaConsulta") public List<Consulta>
-	  obterLista(); //ListaExames
+	@GetMapping(value = "/consulta") 
+	public List<Consulta> obterLista(); //ListaExames
 	 
 	@PostMapping(value = "/consulta")
 	public void incluir(Consulta consulta);

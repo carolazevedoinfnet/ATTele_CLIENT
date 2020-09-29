@@ -13,8 +13,6 @@ import org.springframework.web.bind.support.SessionStatus;
 import br.com.infnet.ATTele_CLIENT.negocio.Usuario;
 import br.com.infnet.ATTele_CLIENT.service.UsuarioService;
 
-
-
 @Controller
 @SessionAttributes("user")
 public class AppController {
@@ -22,9 +20,12 @@ public class AppController {
 	@Autowired 
 	private UsuarioService usuarioService;
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "", method = RequestMethod.GET)
 	public String showInit() {
-		return "login";
+		
+		System.out.println("Teste Marcio");
+		
+		return "../home";
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -39,7 +40,12 @@ public class AppController {
 				@RequestParam String senha
 			) {
 
-		Usuario usuario = usuarioService.isValid(login, senha);
+		/* Usuario usuario = usuarioService.isValid(login, senha); */
+		
+		Usuario usuario = null;
+		usuario.setNome("Carolina");
+		usuario.setLogin("Carolina");
+		usuario.setSenha("Carolina");
 		
 		if(usuario == null) {
 			model.addAttribute("mensagem", "Credenciais inválidas: " + login);

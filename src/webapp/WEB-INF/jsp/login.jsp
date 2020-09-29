@@ -27,8 +27,8 @@
     <h4 class="card-title"> Carolina Alvares de Azevedo Gomes</h4>
     <p class="card-text">Engenharia de Software</p>
     <p class="card-text">Assessment - Projeto de Bloco: Desenvolvimento Java [20E2_5]</p>
-      <a href="https://github.com/caroladeazevedo/ATTelemedicina.git" class="btn btn-primary btn-sm">GIT API</a>
-        <a href="https://github.com/caroladeazevedo/ATTelemedicina.git" class="btn btn-primary btn-sm">GIT CLIENT</a>
+      <a href="https://github.com/carolazevedoinfnet/ATTele_API.git" class="btn btn-primary btn-sm">GIT API</a>
+        <a href="https://github.com/carolazevedoinfnet/ATTele_CLIENT.git" class="btn btn-primary btn-sm">GIT CLIENT</a>
 
     </div>
   </div>
