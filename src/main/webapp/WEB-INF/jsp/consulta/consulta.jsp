@@ -33,7 +33,7 @@
 
 
 
-			<div class="form-group">
+		<%-- 	<div class="form-group">
 				<label for="exampleFormControlSelect">Escolha Paciente:</label> <select
 					class="form-control" id="exampleFormControlSelect" name="paciente">
 					<c:forEach var="p" items="${pacientes}">
@@ -41,8 +41,8 @@
 					</c:forEach>
 				</select>
 			</div>
-
-			<div class="form-group">
+ --%>
+		<!-- 	<div class="form-group">
 				<label for="exampleFormControlSelect1">Categoria:</label> <select
 					class="form-control" id="exampleFormControlSelect1"
 					name="categoria">
@@ -53,17 +53,17 @@
 
 				</select>
 
-			</div>
+			</div> -->
 
 
-			<div class="form-group">
+		<%-- 	<div class="form-group">
 				<label for="exampleFormControlSelect1">Escolha Médico:</label> <select
 					class="form-control" id="exampleFormControlSelect1" name="medico">
 					<c:forEach var="m" items="${medicos}">
 						<option value="${m.id}">${m.nome}</option>
 					</c:forEach>
 				</select>
-			</div>
+			</div> --%>
 
 			<div class="form-group">
 				<label for="hora">Dia da consulta:</label> <input type="date"

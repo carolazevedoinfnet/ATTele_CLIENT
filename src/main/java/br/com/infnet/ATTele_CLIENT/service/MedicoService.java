@@ -25,7 +25,7 @@ public class MedicoService {
 }
 	
 		public List<Medico> obterLista(){
-			return medicoClient.obterLista();
+			return medicoClient.obterLista(); //
 		}
 
 		

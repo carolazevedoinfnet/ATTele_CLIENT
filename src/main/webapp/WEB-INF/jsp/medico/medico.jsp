@@ -47,7 +47,7 @@
 		
 	</div>
 
-	<div class="form-group">
+<!-- 	<div class="form-group">
 	  <label>Especialidade:</label>
 	
 		 
@@ -64,7 +64,7 @@
 		</div>
 		 
 
-	</div>
+	</div> -->
 
     <button type="submit" class="btn btn-primary">Cadastrar</button>
   </form>

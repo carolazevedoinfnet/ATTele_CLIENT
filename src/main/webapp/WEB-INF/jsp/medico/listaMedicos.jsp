@@ -27,7 +27,7 @@
         <th>Email</th>
 		<th>Clínico Geral</th>
 		<th>Especialista</th>
-        <th>Especialidade</th>
+  <!--       <th>Especialidade</th> -->
        
     
       </tr>
@@ -43,8 +43,8 @@
 			     	<td>${m.email}</td>
 					<td>${m.clinico}</td>
 					<td>${m.especialista}</td>
-			     	<td>${m.especialidade}</td>
-			        <td><a href="/medico/excluir/${m.id}">excluir</a></td>
+<%-- 			     	<td>${m.especialidade}</td>
+ --%>			        <td><a href="/medico/excluir/${m.id}">excluir</a></td>
 			      </tr>
 			
 			

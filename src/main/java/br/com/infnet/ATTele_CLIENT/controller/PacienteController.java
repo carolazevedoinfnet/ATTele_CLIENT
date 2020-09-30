@@ -32,16 +32,13 @@ public class PacienteController {
 			Model model
 			
 			) {
-	
-		model.addAttribute("listaMedicos", medicoService.obterLista());
-		
 
 		return "paciente/paciente";
 	}
 
 	
-	@RequestMapping(value= "/pacientes", method = RequestMethod.GET) public
-	  String obterListaPaciente(
+	@RequestMapping(value= "/pacientes", method = RequestMethod.GET) 
+	public String obterListaPaciente(
 			  Model model
 			  ) {
 	  

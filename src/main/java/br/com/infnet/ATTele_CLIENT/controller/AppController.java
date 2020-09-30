@@ -23,9 +23,8 @@ public class AppController {
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public String showInit() {
 		
-		System.out.println("Teste Marcio");
 		
-		return "../home";
+		return "login";
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -42,18 +41,19 @@ public class AppController {
 
 		/* Usuario usuario = usuarioService.isValid(login, senha); */
 		
-		Usuario usuario = null;
+		Usuario usuario = new Usuario();
 		usuario.setNome("Carolina");
 		usuario.setLogin("Carolina");
 		usuario.setSenha("Carolina");
 		
-		if(usuario == null) {
-			model.addAttribute("mensagem", "Credenciais inválidas: " + login);
-			return "login";
-		} else {
-			model.addAttribute("user", usuario);
-			return "home";
-		}		
+		model.addAttribute("user", usuario);
+		return "home";
+		
+		/*
+		 * if(usuario == null) { model.addAttribute("mensagem",
+		 * "Credenciais inválidas: " + login); return "login"; } else {
+		 * model.addAttribute("user", usuario); return "home"; }
+		 */	
 	}
 
 	@RequestMapping(value = "/voltar", method = RequestMethod.GET) 

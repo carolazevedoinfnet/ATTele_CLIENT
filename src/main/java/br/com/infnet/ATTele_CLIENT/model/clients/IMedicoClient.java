@@ -13,16 +13,17 @@ import br.com.infnet.ATTele_CLIENT.negocio.Medico;
 
 
 
-@FeignClient(url = "http://localhost:8081/medico", name = "medicoClient")
+@FeignClient(url = "http://localhost:8081/api/telemedicina/medico", name = "medicoClient")
 public interface IMedicoClient {
 	
 	
+	
 	@GetMapping(value = "/medicos")
-	public List<Medico> obterLista(); //ListaMedicos
+	public List<Medico> obterLista();  //
 
 	@PostMapping(value = "/medico") 
 	public void incluir(Medico medico);
-		
+	
 	
 	@DeleteMapping(value = "/medico/excluir/{id}")
 	public void excluir(@PathVariable Integer id);
@@ -30,9 +31,6 @@ public interface IMedicoClient {
 
 	@GetMapping(value = "/medico/{id}/consultar")
 	public Medico obterPorId(@PathVariable Integer id);
-	
-	
-	
-	
+		
 
 }

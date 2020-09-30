@@ -36,9 +36,8 @@ public class Paciente {
 	
 	@Override
 	public String toString() {
-		return this.getNome();
+		return String.format ("%s", this.getNome());
 				}
-
 	
 
 	public void imprimir() {

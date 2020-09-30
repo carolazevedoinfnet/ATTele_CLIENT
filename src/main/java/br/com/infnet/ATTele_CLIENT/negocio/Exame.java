@@ -9,9 +9,7 @@ public class Exame {
 	
 	private Integer id;
 	private String descricao;
-
 	private List<Consulta> consultas;
-
 	public Exame() {		
 	}
 	

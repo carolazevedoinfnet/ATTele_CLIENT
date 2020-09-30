@@ -1,49 +1,48 @@
 package br.com.infnet.ATTele_CLIENT.negocio;
 
-
-
-
+import java.time.LocalDate;
 
 public class Medico {
-	
 
-	
 	private Integer id;
 	private String nome;
 	private String email;
 	private boolean clinico;
 	private boolean especialista;
-	private String[] especialidades;
-	
-
-
+	/* private String[] especialidades; */
 
 	public Medico() {
 	}
 
-	public Medico(Integer id, String nome, String email, boolean clinico, boolean especialista, String[] especialidade) {
-		this.id = id;
-		this.nome = nome;
-		this.email = email;
-		this.clinico = clinico;
-		this.especialista = especialista;
-		this.especialidades = especialidade;
-		
+	/*
+	 * public Medico(Integer id, String nome, String email, boolean clinico, boolean
+	 * especialista String[] especialidades) { this.id = id; this.nome = nome;
+	 * this.email = email; this.clinico = clinico; this.especialista = especialista;
+	 * //this.especialidades = especialidades;
+	 */
+	
+	
+	public Medico(Integer id, String nome, String email, boolean clinico, boolean especialista/* String[] especialidades*/) {
+		this.setId(id);
+		this.setNome(nome);
+		this.setEmail(email);
+		this.setClinico(clinico);
+		this.setEspecialista(especialista);
+	}
+
+	@Override
+	public String toString() {
+
+		return String.format ("%s", this.getNome());
 
 	}
 	
-	@Override
-	public String toString() {
-	 return this.getNome();
-				
-	}
 	
-	
+
 	public void imprimir() {
 		System.out.println(this);
-			
+
 	}
-	
 
 	public Integer getId() {
 		return id;
@@ -69,7 +68,6 @@ public class Medico {
 		this.email = email;
 	}
 
-
 	public boolean isClinico() {
 		return clinico;
 	}
@@ -86,26 +84,18 @@ public class Medico {
 		this.especialista = especialista;
 	}
 
-	public String getEspecialidade() {
-		if (especialidades ==null)
-			return "" ;
-		
-		String especi = "";
-		
-		for (String spec : especialidades) {
-			if(especi.equals(""))	
-				especi = spec;
-			else 
-				especi = especi + ", " + spec;		
-		}
-		
-		return especi;
-	}
-
-	public void setEspecialidade(String[] especialidade) {
-		this.especialidades = especialidade;
-	}
-
-
+	/*
+	 * public String getEspecialidades() { if (especialidades ==null) return "" ;
+	 * 
+	 * String especi = "";
+	 * 
+	 * for (String spec : especialidades) { if(especi.equals("")) especi = spec;
+	 * else especi = especi + ", " + spec; }
+	 * 
+	 * return especi; }
+	 * 
+	 * public void setEspecialidades(String[] especialidades) { this.especialidades
+	 * = especialidades; }
+	 */
 
 }

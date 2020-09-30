@@ -75,7 +75,7 @@
   </div>
   
   
-    <div class="column">
+<!--     <div class="column">
     <div class="card" style="width:170px">
     <img class="card-img-top" src="img/calendar_p.png" alt="Consulta" style="width:100%">
     <div class="card-body">
@@ -90,7 +90,7 @@
     <div class="card-body">
       <a href="/consultas" class="btn btn-primary btn-sm">Lista Consultas</a>
     </div>
-  </div>
+  </div> -->
   
   </div>
      <br>
